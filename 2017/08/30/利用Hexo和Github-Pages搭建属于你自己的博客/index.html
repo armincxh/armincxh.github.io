@@ -3,23 +3,34 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>Armin的小屋  O(∩_∩)O~</title>
+  <title>利用hexo和github pages搭建属于你自己的博客 | Armin的小屋  O(∩_∩)O~</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="blog">
   
   
   
-  <meta name="description" content="A beautiful day has begun again.">
-<meta name="keywords" content="armin;blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Armin的小屋  O(∩_∩)O~">
-<meta property="og:url" content="https://armincxh.github.com/page/2/index.html">
+  
+  <meta name="description" content="环境说明12系统：Ubuntu 16.04 LTS所需软件：Node.js、Git、Hexo  大致步骤 Node.js的安装 Git的安装和配置 Hexo的安装和配置 Github的配置 博客的部署 如何编辑和发布博客 挑选一个Hexo主题  Node.js的安装建议通过nvm(Node Version Manager)安装，nvm可以通过参照nvm文档进行安装，这里直接给出安装方法：  usi">
+<meta name="keywords" content="blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用Hexo和Github Pages搭建属于你自己的博客">
+<meta property="og:url" content="https://armincxh.github.com/2017/08/30/利用Hexo和Github-Pages搭建属于你自己的博客/index.html">
 <meta property="og:site_name" content="Armin的小屋  O(∩_∩)O~">
-<meta property="og:description" content="A beautiful day has begun again.">
+<meta property="og:description" content="环境说明12系统：Ubuntu 16.04 LTS所需软件：Node.js、Git、Hexo  大致步骤 Node.js的安装 Git的安装和配置 Hexo的安装和配置 Github的配置 博客的部署 如何编辑和发布博客 挑选一个Hexo主题  Node.js的安装建议通过nvm(Node Version Manager)安装，nvm可以通过参照nvm文档进行安装，这里直接给出安装方法：  usi">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://crystalwindz.com/hexo_github_blog/1.png">
+<meta property="og:image" content="https://crystalwindz.com/hexo_github_blog/7.png">
+<meta property="og:image" content="https://crystalwindz.com/hexo_github_blog/2.png">
+<meta property="og:image" content="https://crystalwindz.com/hexo_github_blog/3.png">
+<meta property="og:image" content="https://crystalwindz.com/hexo_github_blog/4.png">
+<meta property="og:image" content="https://crystalwindz.com/hexo_github_blog/5.png">
+<meta property="og:image" content="https://crystalwindz.com/hexo_github_blog/6.png">
+<meta property="og:updated_time" content="2019-08-30T12:14:29.956Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Armin的小屋  O(∩_∩)O~">
-<meta name="twitter:description" content="A beautiful day has begun again.">
+<meta name="twitter:title" content="利用Hexo和Github Pages搭建属于你自己的博客">
+<meta name="twitter:description" content="环境说明12系统：Ubuntu 16.04 LTS所需软件：Node.js、Git、Hexo  大致步骤 Node.js的安装 Git的安装和配置 Hexo的安装和配置 Github的配置 博客的部署 如何编辑和发布博客 挑选一个Hexo主题  Node.js的安装建议通过nvm(Node Version Manager)安装，nvm可以通过参照nvm文档进行安装，这里直接给出安装方法：  usi">
+<meta name="twitter:image" content="https://crystalwindz.com/hexo_github_blog/1.png">
   
     <link rel="alternate" href="/atom.xml" title="Armin的小屋  O(∩_∩)O~" type="application/atom+xml">
   
@@ -48,11 +59,13 @@
   <link rel="stylesheet" href="/css/bootstrap.css">
 
   
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/dialog.css">
   
 
   
 
+  
+    <link rel="stylesheet" href="/css/header-post.css">
   
 
   
@@ -65,415 +78,107 @@
 </html>
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
-  
-    <header id="header">
-
-	<!-- 背景图模式 -->
-	
-
-    
-      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
-
-      <!-- Support rolling -->  
-        
-        <section class="awSlider">
-          <div class="carousel slide carousel-fade " data-ride="carousel">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-               
-                  
-                    <div class="item active">
-                  
-                    <img id="carousel-img0" src="/css/images/home-bg.jpg">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img0 = new Image();
-                      var imageTag0 = document.getElementById("carousel-img0");
-                      img0.src = imageTag0.src;
-                      img0.onload=function(){
-                        if (img0.width / img0.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag0.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag0.style.height = document.body.clientHeight + "px";
-                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img1" src="/css/images/sample.jpg">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img1 = new Image();
-                      var imageTag1 = document.getElementById("carousel-img1");
-                      img1.src = imageTag1.src;
-                      img1.onload=function(){
-                        if (img1.width / img1.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag1.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag1.style.height = document.body.clientHeight + "px";
-                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img2" src="https://source.unsplash.com/collection/954550/1920x1080">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img2 = new Image();
-                      var imageTag2 = document.getElementById("carousel-img2");
-                      img2.src = imageTag2.src;
-                      img2.onload=function(){
-                        if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag2.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag2.style.height = document.body.clientHeight + "px";
-                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </section>
-        <script>
-          $('section.awSlider .carousel').carousel({
-              pause: '',
-              interval: 5000
-          });
-          var startImage = $('section.awSlider .item.active > img').attr('src');
-          $('section.awSlider .carousel').on('slid.bs.carousel', function () {
-              var bscn = $(this).find('.item.active > img').attr('src');
-              $('section.awSlider > img').attr('src', bscn);
-          });
-        </script>
-      
-
-    
- 
-
-
-    <canvas width="100%" height="100%"></canvas>
-    <script>
-      var c = document.getElementsByTagName('canvas')[0],
-          x = c.getContext('2d'),
-          w = window.innerWidth,
-          h = window.innerHeight,
-          pr = window.devicePixelRatio || 1,
-          f = 90,
-          q,
-          m = Math,
-          r = 0,
-          u = m.PI*2,
-          v = m.cos,
-          z = m.random
-      c.width = w*pr
-      c.height = h*pr
-      x.scale(pr, pr)
-      x.globalAlpha = 0.6
-
-      <!-- 折线Polyline背景 -->
-      
-		 function redraw(){
-		 	var pattern = Trianglify({
-				width: window.innerWidth,
-				height: window.innerHeight
-			});
-            pattern.canvas(c)
-        }
-        document.getElementById("intrologo").onclick = redraw
-        document.getElementById("intrologo").ontouchstart = redraw
-		redraw()
-      
-    </script>
-    
-
-    
-      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
-    
-
-        
-          <div class="homelogoback"  style="border: 1px solid #404040;" >
-            <h1><a href="#content" id="logo">Armin的小屋  O(∩_∩)O~</a></h1>
-            <h3>A beautiful day has begun again.</h3>
-            <h5>Armin</h5>
-            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
-          </div>
-        
-    
-    </div>
-  </div>
-
-  <!-- 自适应主页背景大图 -->
-  
-
- <!-- home_logo_image居中 -->
- 
-    <script>
-        var homelogodiv = document.getElementById("homelogo");
-        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
-          homelogodiv.style.width = document.body.clientWidth + "px";
-          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
-        } else {
-          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
-          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
-        }
-    </script>
-  
-
-  <div class="intro-navigate">
-      <p class="navigater-list">
-        
-          <a id="beautifont" class="main-nav-link" href="/">Home</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/archives">Archives</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/categories">Categories</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/about">About</a>
-        
-      </p>
-  </div>
-
-</header>
   
   <div id="container">
     <div id="wrap">
       
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;">
-  
-    <article id="post-月亮与六便士"  class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-利用Hexo和Github-Pages搭建属于你自己的博客" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/06/29/月亮与六便士/">[书犹药也，善读之可以医愚]</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/06/29/月亮与六便士/" class="article-date">
-	  <time datetime="2018-06-29T00:56:25.000Z" itemprop="datePublished">2018-06-29</time>
-	</a>
-
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/home/anonymous/blog/source/_posts/0.jpg" alt="0"></p>
-<p>本书看点：</p>
-<p>◎书中讲述了主人公原是位证券经纪人，人届中年后突然响应内心的呼唤，合弃一切到南太平洋的塔希提岛与土著人一起生活，获得灵感，创作出许多艺术杰作。</p>
-<p>◎威廉•萨默塞特•毛姆，英国小说家、戏剧家，被誉为“最会讲故事的作家”。</p>
-<p>◎“我为什么要从头看他呢？因为他很会讲故事，我就看他的故事，我看他写的人，就像我在英国接触到的所有的英国人，有一种特别的味道。”——董桥</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-😀😀😀阳光正好。。。"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/12/09/😀😀😀阳光正好。。。/">😀😀😀阳光正好。。。</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2017/12/09/😀😀😀阳光正好。。。/" class="article-date">
-	  <time datetime="2017-12-09T12:19:19.000Z" itemprop="datePublished">2017-12-09</time>
-	</a>
-
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://abs.twimg.com/emoji/v2/72x72/1f600.png" alt="😀"><img src="https://abs.twimg.com/emoji/v2/72x72/1f600.png" alt="😀"><img src="https://abs.twimg.com/emoji/v2/72x72/1f600.png" alt="😀">阳光正好。。。</p>
-<p><img src="https://i.imgur.com/LfBZHgq.jpg" alt="love"></p>
-<p>—YIAIHU PARK</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/😀😀😀阳光正好。。。/">😀😀😀阳光正好。。。</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-《我在荒岛上迎接黎明》"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/09/29/《我在荒岛上迎接黎明》/">《我在荒岛上迎接黎明》</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2017/09/29/《我在荒岛上迎接黎明》/" class="article-date">
-	  <time datetime="2017-09-29T07:14:09.000Z" itemprop="datePublished">2017-09-29</time>
-	</a>
-
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>​    我希望自己也是一颗星星，如果我会发光，就不必害怕黑暗。如果我自己是那么美好，那么一切恐惧就可以烟消云散。</p>
-<p>​             ——《我在荒岛上迎接黎明》</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-Love-Is-In-Small-Things"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/09/29/Love-Is-In-Small-Things/">Love Is In Small Things</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2017/09/29/Love-Is-In-Small-Things/" class="article-date">
-	  <time datetime="2017-09-29T06:37:24.000Z" itemprop="datePublished">2017-09-29</time>
-	</a>
-
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>昨晚做梦了，醒来收到一首你唱的歌</strong></p>
-<h5 id="你是我的心跳。"><a href="#你是我的心跳。" class="headerlink" title="你是我的心跳。"></a>你是我的心跳。</h5><h5 id="我也是…-…"><a href="#我也是…-…" class="headerlink" title="我也是… …"></a>我也是… …</h5><p>  工作的时候很安静，难得见你这样不声不响。</p>
-<p>  如果眼神有力量，现在就让你的眼睛离开电脑，只看着我吧。</p>
-<p>  我时常这样想，却不想打扰你。你有你的事业，那是你的骄傲。</p>
-<p>为什么坐在这里？</p>
-<p>因为想你一回头就能看到我。</p>
-<p>即使经历了一天的奔波劳累，依旧想为你做一桌美食。</p>
-<p>你在厨房忙碌的身影，看起来很温柔。一定是倾注了爱意的晚餐吧。</p>
-<p>真幸运，那个人是我。</p>
-<p>我真是娶了一个粗心的老婆，所以我务必要变成更细心的人啊。</p>
-<p>她看起来活力满满，其实胆小得很。</p>
-<p>所以不放心她一个人，担心她无法照顾好自己，然后就要陪上一辈子，护她百岁无忧。</p>
-<p>“女士，我可以邀请你跳一支舞吗？”</p>
-<p>“你又在做奇怪的事情了。”</p>
-<p>“你今天好美。”</p>
-<p>“……”</p>
-<p>爱是陪伴，是你在身边的每一天。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-利用Hexo和Github-Pages搭建属于你自己的博客"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/08/30/利用Hexo和Github-Pages搭建属于你自己的博客/">利用Hexo和Github Pages搭建属于你自己的博客</a>
+    <h1 class="thumb" class="article-title" itemprop="name">
+      利用Hexo和Github Pages搭建属于你自己的博客
     </h1>
   
 
@@ -487,6 +192,12 @@
 
       
       
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
     </div>
     <div class="article-entry" itemprop="articleBody">
       
@@ -607,6 +318,44 @@
     </div>
     <footer class="article-footer">
       
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '',
+  alipayImage: ''
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
@@ -614,68 +363,42 @@
     </footer>
   </div>
   
-</article>
-
-<!-- Table of Contents -->
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2017/09/29/Love-Is-In-Small-Things/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          Love Is In Small Things
+        
+      </div>
+    </a>
   
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/08/30/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2017/08/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2017/08/30/hello-world/" class="article-date">
-	  <time datetime="2017-08-30T00:56:25.000Z" itemprop="datePublished">2017-08-30</time>
-	</a>
-
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>你好世界。。。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;Hello world!&quot;);</span><br><span class="line"></span><br><span class="line">alert(&apos;Hello world!&apos;);</span><br><span class="line"></span><br><span class="line">echo &quot;Hello world!&quot;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hello-World/">Hello World</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 <!-- Table of Contents -->
 
-  
-
-
-  <nav id="page-nav">
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
     
-    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
-
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境说明"><span class="nav-number">1.</span> <span class="nav-text">环境说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大致步骤"><span class="nav-number">2.</span> <span class="nav-text">大致步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js的安装"><span class="nav-number">3.</span> <span class="nav-text">Node.js的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git的安装和配置"><span class="nav-number">4.</span> <span class="nav-text">Git的安装和配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo的安装和配置"><span class="nav-number">5.</span> <span class="nav-text">Hexo的安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是Hexo？"><span class="nav-number">5.1.</span> <span class="nav-text">什么是Hexo？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo的安装"><span class="nav-number">5.2.</span> <span class="nav-text">Hexo的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo简单体验"><span class="nav-number">5.3.</span> <span class="nav-text">Hexo简单体验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github的配置"><span class="nav-number">6.</span> <span class="nav-text">Github的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是Github-Pages？"><span class="nav-number">6.1.</span> <span class="nav-text">什么是Github Pages？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何创建属于我的Github-Pages？"><span class="nav-number">6.2.</span> <span class="nav-text">如何创建属于我的Github Pages？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客的部署"><span class="nav-number">7.</span> <span class="nav-text">博客的部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何编辑和发布博客"><span class="nav-number">8.</span> <span class="nav-text">如何编辑和发布博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#挑选一个Hexo主题"><span class="nav-number">9.</span> <span class="nav-text">挑选一个Hexo主题</span></a></li></ol>
+    
+    </div>
+  </aside>
 </section>
         
       </div>
-      
-        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
       
       <footer id="footer">
   
@@ -767,9 +490,9 @@
 <script src="/js/scripts.js"></script>
 
 
-  <script src="/js/home.js"></script>
 
 
+  <script src="/js/dialog.js"></script>
 
 
 
@@ -854,6 +577,8 @@
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>
