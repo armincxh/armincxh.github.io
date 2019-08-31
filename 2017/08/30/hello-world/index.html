@@ -206,11 +206,11 @@
 <script src="/js/vdonate.js"></script>
 <script>
 var a = new Donate({
-  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  title: '!', // 可选参数，打赏标题
   btnText: 'Donate', // 可选参数，打赏按钮文字
   el: document.getElementById('donation_div'),
-  wechatImage: 'https://i.imgur.com/TYSntaS.jpg',
-  alipayImage: 'https://i.imgur.com/nRk9dUB.jpg'
+  wechatImage: '',
+  alipayImage: ''
 });
 </script>
       
@@ -283,17 +283,15 @@ var a = new Donate({
 
   <div class="container">
       	<div class="row">
-	   
-
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
 	      <p id="copyRightEn">Copyright &copy; 2017 - 2019 Armin的小屋  O(∩_∩)O~ All Rights Reserved.</p>
 	      
-	          
+	      
     		<p class="busuanzi_uv">
 				UV : <span id="busuanzi_value_site_uv"></span> |  
 				PV : <span id="busuanzi_value_site_pv"></span>
 		    </p>
   		   
-	      
 		</div>
 
 		
@@ -315,7 +313,6 @@ var a = new Donate({
       contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
     }
 </script>
-
     </div>
     <!-- <nav id="mobile-nav">
   
