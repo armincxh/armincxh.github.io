@@ -1680,14 +1680,14 @@ a.article-title:hover {
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: #002451;
+  background: #f8f8f8;
   margin: 20px 0px;
   padding: 15px 20px;
   border-style: solid;
   border-color: #eef1f8;
   border-width: 1px 0;
   overflow: auto;
-  color: #fff;
+  color: $highlight-foreground;
   font-size: 0.9em;
   line-height: 1em;
 }
@@ -1741,7 +1741,7 @@ figure.highlight::-webkit-scrollbar-track {
 }
 .article-entry .highlight figcaption {
   font-size: 0.85em;
-  color: #7285b7;
+  color: $highlight-comment;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -1765,14 +1765,14 @@ figure.highlight::-webkit-scrollbar-track {
   height: 1.7em;
 }
 .article-entry .highlight .line.marked {
-  background: #003f8e;
+  background: $highlight-selection;
 }
 .article-entry .gist {
   margin: 0 -20px;
   border-style: solid;
   border-color: #eef1f8;
   border-width: 1px 0;
-  background: #002451;
+  background: #f8f8f8;
   padding: 15px 20px 15px 0;
 }
 .article-entry .gist .gist-file {
@@ -1798,8 +1798,8 @@ figure.highlight::-webkit-scrollbar-track {
   border: none;
 }
 .article-entry .gist .gist-file .gist-meta {
-  background: #002451;
-  color: #7285b7;
+  background: #f8f8f8;
+  color: $highlight-comment;
   font: 0.85em -apple-system, "Arial", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   text-shadow: 0 0;
   padding: 0;
@@ -1815,7 +1815,7 @@ figure.highlight::-webkit-scrollbar-track {
 }
 pre .comment,
 pre .title {
-  color: #7285b7;
+  color: $highlight-comment;
 }
 pre .variable,
 pre .attribute,
@@ -1829,7 +1829,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #ff9da4;
+  color: $highlight-red;
 }
 pre .number,
 pre .preprocessor,
@@ -1837,12 +1837,12 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: #ffc58f;
+  color: $highlight-orange;
 }
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #d1f1a9;
+  color: $highlight-green;
 }
 pre .string,
 pre .value,
@@ -1850,10 +1850,10 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #d1f1a9;
+  color: $highlight-green;
 }
 pre .css .hexcolor {
-  color: #9ff;
+  color: $highlight-aqua;
 }
 pre .function,
 pre .python .decorator,
@@ -1863,11 +1863,95 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #bbdaff;
+  color: $highlight-blue;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #ebbbff;
+  color: $highlight-purple;
+}
+pre {
+  color: #525252;
+}
+pre .function .keyword,
+pre .constant {
+  color: #0092db;
+}
+pre .keyword,
+pre .attribute {
+  color: #e96900;
+}
+pre .number,
+pre .literal {
+  color: #ae81ff;
+}
+pre .tag,
+pre .tag .title,
+pre .change,
+pre .winutils,
+pre .flow,
+pre .lisp .title,
+pre .clojure .built_in,
+pre .nginx .title,
+pre .tex .special {
+  color: #2973b7;
+}
+pre .symbol,
+pre .symbol .string,
+pre .value,
+pre .regexp {
+  color: #42b983;
+}
+pre .title {
+  color: #83b917;
+}
+pre .tag .value,
+pre .string,
+pre .subst,
+pre .haskell .type,
+pre .preprocessor,
+pre .ruby .class .parent,
+pre .built_in,
+pre .sql .aggregate,
+pre .django .template_tag,
+pre .django .variable,
+pre .smalltalk .class,
+pre .javadoc,
+pre .django .filter .argument,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .attr_selector,
+pre .pseudo,
+pre .addition,
+pre .stream,
+pre .envvar,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .prompt {
+  color: #42b983;
+}
+pre .comment,
+pre .java .annotation,
+pre .python .decorator,
+pre .template_comment,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .apache .sqbracket,
+pre .tex .formula {
+  color: #b3b3b3;
+}
+pre .deletion {
+  color: #ba4545;
+}
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: 0.5;
 }
 @media screen and (max-width: 479px) {
   #mobile-nav {
