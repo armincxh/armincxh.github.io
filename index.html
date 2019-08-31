@@ -273,6 +273,358 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-tmux安装及快捷键"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2019/08/31/tmux安装及快捷键/">tmux安装及快捷键</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/08/31/tmux安装及快捷键/" class="article-date">
+	  <time datetime="2019-08-31T06:15:25.000Z" itemprop="datePublished">2019-08-31</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>安装：sudo apt install tmux    就这么简单</p>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><h3 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><prefix></prefix></td>
+<td>C-b</td>
+</tr>
+<tr>
+<td><prefix> e</prefix></td>
+<td>打开Vim编辑器编辑.tmux.conf.local</td>
+</tr>
+<tr>
+<td><prefix> r</prefix></td>
+<td>重载配置</td>
+</tr>
+</tbody></table>
+<h3 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x或Esc</td>
+<td>退出copy-mode模式</td>
+</tr>
+<tr>
+<td>C-l</td>
+<td>清屏</td>
+</tr>
+<tr>
+<td><prefix> ?</prefix></td>
+<td>打开帮助信息</td>
+</tr>
+<tr>
+<td><prefix> m</prefix></td>
+<td>使能或禁止鼠标</td>
+</tr>
+<tr>
+<td><prefix> :</prefix></td>
+<td>打开命令行</td>
+</tr>
+<tr>
+<td><prefix> i</prefix></td>
+<td>显示tmux信息</td>
+</tr>
+<tr>
+<td><prefix> ~</prefix></td>
+<td>显示message</td>
+</tr>
+<tr>
+<td><prefix> t</prefix></td>
+<td>时钟模式</td>
+</tr>
+</tbody></table>
+<h3 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><prefix> C-c</prefix></td>
+<td>创建新session</td>
+</tr>
+<tr>
+<td><prefix> $</prefix></td>
+<td>重命名session</td>
+</tr>
+<tr>
+<td><prefix> (</prefix></td>
+<td>上一个session</td>
+</tr>
+<tr>
+<td><prefix> )</prefix></td>
+<td>下一个session</td>
+</tr>
+<tr>
+<td><prefix> s</prefix></td>
+<td>选择session</td>
+</tr>
+<tr>
+<td><prefix> C-f</prefix></td>
+<td>使用名称打开其他session</td>
+</tr>
+<tr>
+<td><prefix> d</prefix></td>
+<td>离开session, 回到命令行用tmux list-session查看SessionNumber，用tmux attach -d -t SessionNumber重新进入session</td>
+</tr>
+<tr>
+<td><prefix> C-z</prefix></td>
+<td>挂起 session</td>
+</tr>
+</tbody></table>
+<h3 id="Window"><a href="#Window" class="headerlink" title="Window"></a>Window</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><prefix> c</prefix></td>
+<td>创建新window</td>
+</tr>
+<tr>
+<td><prefix> ,</prefix></td>
+<td>重命名window</td>
+</tr>
+<tr>
+<td><prefix> f</prefix></td>
+<td>查找window</td>
+</tr>
+<tr>
+<td><prefix> w</prefix></td>
+<td>选择window</td>
+</tr>
+<tr>
+<td><prefix> .</prefix></td>
+<td>move window</td>
+</tr>
+<tr>
+<td><prefix> o</prefix></td>
+<td>Rotate window</td>
+</tr>
+<tr>
+<td><prefix> C-h</prefix></td>
+<td>打开上一个window</td>
+</tr>
+<tr>
+<td><prefix> C-l</prefix></td>
+<td>打开下一个window</td>
+</tr>
+<tr>
+<td><prefix> 1~9</prefix></td>
+<td>打开第N个window</td>
+</tr>
+<tr>
+<td><prefix> ‘</prefix></td>
+<td>打开第N个window</td>
+</tr>
+<tr>
+<td><prefix> Tab</prefix></td>
+<td>打开最后一个active的window</td>
+</tr>
+<tr>
+<td><prefix> &amp;</prefix></td>
+<td>关闭当前窗口</td>
+</tr>
+</tbody></table>
+<h3 id="Pane"><a href="#Pane" class="headerlink" title="Pane"></a>Pane</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><prefix> -或”</prefix></td>
+<td>水平分隔</td>
+</tr>
+<tr>
+<td><prefix> _或%</prefix></td>
+<td>垂直分隔</td>
+</tr>
+<tr>
+<td><prefix> x</prefix></td>
+<td>关闭pane</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><prefix> j</prefix></td>
+<td>转移到下边</td>
+</tr>
+<tr>
+<td><prefix> k</prefix></td>
+<td>转移到上边</td>
+</tr>
+<tr>
+<td><prefix> h</prefix></td>
+<td>转移到左边</td>
+</tr>
+<tr>
+<td><prefix> l</prefix></td>
+<td>转移到右边</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><prefix> J</prefix></td>
+<td>下边伸长</td>
+</tr>
+<tr>
+<td><prefix> K</prefix></td>
+<td>上边伸长</td>
+</tr>
+<tr>
+<td><prefix> H</prefix></td>
+<td>左边伸长</td>
+</tr>
+<tr>
+<td><prefix> L</prefix></td>
+<td>右边伸长</td>
+</tr>
+<tr>
+<td><prefix> +</prefix></td>
+<td>最大化和复原(会创建新window，旧window变为dead)</td>
+</tr>
+<tr>
+<td><prefix> z</prefix></td>
+<td>最大化和复原</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><prefix> q</prefix></td>
+<td>显示pane</td>
+</tr>
+<tr>
+<td><prefix> ;</prefix></td>
+<td>打开最后一个pane</td>
+</tr>
+<tr>
+<td><prefix> o</prefix></td>
+<td>循环切换pane</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><prefix> &lt;或{</prefix></td>
+<td>交换pane</td>
+</tr>
+<tr>
+<td><prefix> &gt;或}</prefix></td>
+<td>交换pane</td>
+</tr>
+<tr>
+<td><prefix> !</prefix></td>
+<td>单独把pane放到新窗口</td>
+</tr>
+<tr>
+<td><prefix> Space</prefix></td>
+<td>切换窗口布局</td>
+</tr>
+</tbody></table>
+<h3 id="Copy"><a href="#Copy" class="headerlink" title="Copy"></a>Copy</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><prefix> Enter</prefix></td>
+<td>进入复制模式</td>
+</tr>
+<tr>
+<td><prefix> Esc</prefix></td>
+<td>进入复制模式</td>
+</tr>
+<tr>
+<td><prefix> [</prefix></td>
+<td>进入复制模式</td>
+</tr>
+<tr>
+<td>y</td>
+<td>复制</td>
+</tr>
+<tr>
+<td><prefix> ]</prefix></td>
+<td>粘贴最后一个复制</td>
+</tr>
+<tr>
+<td><prefix> p</prefix></td>
+<td>粘贴最后一个复制</td>
+</tr>
+<tr>
+<td><prefix> P</prefix></td>
+<td>选择粘贴, j/k上下选择，d删除</td>
+</tr>
+<tr>
+<td><prefix> b或#</prefix></td>
+<td>列出buffer</td>
+</tr>
+<tr>
+<td><prefix> =</prefix></td>
+<td>选择-Z buffer</td>
+</tr>
+</tbody></table>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://leanpub.com/the-tao-of-tmux/read" target="_blank" rel="noopener">The Tao of tmux</a></li>
+<li><a href="http://louiszhai.github.io/2017/09/30/tmux/" target="_blank" rel="noopener">Tmux使用手册</a></li>
+<li><a href="https://github.com/chubin/wttr.in" target="_blank" rel="noopener">Tmux天气</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-围城"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
@@ -1082,88 +1434,6 @@ body, html {
 <h3 id="逆向工程篇"><a href="#逆向工程篇" class="headerlink" title="逆向工程篇"></a>逆向工程篇</h3><p>关于逆向工程这方面的书籍，自然是首 推看雪出版的《加密与解密》，在这方面，看雪的实力不会比国外的差，那里是逆向学习交流的好场所。在加解密第3版出版的时候就曾出现过山寨版的，因此大家 在购买时得看清楚了，最好到正规的书店购买，目前可能网上买不到了，不过网上有电子版。另外这方面的书籍还有《黑客反汇编揭密》《黑客调试技术揭密》 《逆向工程揭密》，国内出版的《软件调试》也是本牛书，弥补了国内这方面的空缺。还有出版的《IDA权威指南》也是本不错的书籍，详细讲解了IDA的 方方面面，看了之后，你会发现，会用IDA与不会用的差别有多大了。看雪翻译小组也曾出版过一本《IDA Pro代码破解揭秘》，不过这书我也没看过。在逆向工程这方面的书籍也差不多就这么几本了，其它像加解密入门实战，加密与解密实战超级手册，加解密全攻 略……这些基本上都可以摒弃，基本都是抄看雪加解密一书上的东西，大家无须花金钱、时间和精力在此上面。关于获取最新书讯的方法，大家可以订阅<a href="http://china-pub.com/" target="_blank" rel="noopener">互动出版网</a> 计算机新书的RSS，只要有计算机新书出来立马就知道了，它上面经常更新，不过很也是应用技术书籍，对于这些书籍，很多是 没必要买的，比如什么 windows 7使用大全，精通注册表，windows操作XXX，有必要的话，直接百度、google就行了，没必要花钱去买这类书籍。</p>
 <h3 id="脚本安全篇"><a href="#脚本安全篇" class="headerlink" title="脚本安全篇"></a>脚本安全篇</h3><p>在 脚本攻防方面的书籍，最早的曾云好写的《精通黑客脚本》，这书写得相当全面，由浅入深，虽然不厚，但排版密集，内容还是很多的，只是纸质不太好，很 粗糙，里面有很多渗透实战案例，当年国内这方面的法律还不是很严格，若是放在今天，可能里面一些内容会被删除掉。另外大家也可看看老外的 《黑客攻防技术宝典：WEB实战篇》（重点推荐）《xss attack》《sql injection》（中译本：《SQL注入攻击与防御》），以及《WEB安全测试》，英文版的网上有电子书。近两年国内出版的，主要就《白帽子讲WEB 安全》、《WEB前端黑客技术》，推荐一阅。</p>
 <h3 id="系统底层篇"><a href="#系统底层篇" class="headerlink" title="系统底层篇"></a>系统底层篇</h3><p>当年看的第一本系统原理书籍是《深入理解计算机系统》，很不错的一本书。其它此类书籍还有《深入解析windows操作系统》《widnows系统原理与 实现》等，国内之前还出了本 <a href="http://www.amazon.cn/mn/detailmore?showtype=3700&%20prodid=zhbk934046" target="_blank" rel="noopener">《windows操作系统原理》</a>，上面还写着重点大学计算机教材，后面看了乱雪博客上一篇文章后才知道那书是抄袭的，还被原作者控告了，最后还赔偿 了，当年我还从头看完了。关于溢出攻击的书籍，国内主要有《网络渗透技术》、《0day安全：软件漏洞分析技术》《灰帽黑客》，虽然 网渗一书很早出版，其中有些已经过时，但是其思想是不会过时的。若想获取最新书籍，最好的方法还是上面说的：订阅RSS。对于一些不熟悉的技术书籍，一定 要先看完整目录，然后找找网上是否有电子版的，如果有就先看看再决定是否再买，另外如果你已经买或看过同类的经典书籍，就需要重新考虑是否真的有必要买 了。讲了那么多要花钱的书，下面讲讲免费的一套，那就《intel开发手册》，这一套是由因特尔公司免费向全球赠送的书籍，共五本，之前我还订了两套，全 都从美国寄到学校来了，原本以为第一封邮件没收到，就再发了一封，没想到Intel居然连送两套过来，真是大方的不行啊！现在他们已经不再寄送纸质书，仅 寄送包含电子版的光盘。’</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/转载/">转载</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-给计算机初学者的书籍推荐-转载"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2019/08/30/给计算机初学者的书籍推荐-转载/">书籍推荐-转载</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2019/08/30/给计算机初学者的书籍推荐-转载/" class="article-date">
-	  <time datetime="2019-08-30T11:26:04.000Z" itemprop="datePublished">2019-08-30</time>
-	</a>
-
-      
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>C/C++</p>
-<p>1、《C程序设计语言》 入门推荐</p>
-<p>2、《C Primer Plus》 入门推荐</p>
-<p>3、《C和指针》</p>
-<p>4、《C陷阱与缺陷》</p>
-<p>5、《C++ Primer》入门推荐</p>
-<p>为了更深入地理解程序原理，建议再学一下汇编语言</p>
-<p>《现代x86汇编语言程序设计》</p>
-<p>Linux</p>
-<p>《UINX环境高级编程》 后台开发必读</p>
-<p>《鸟哥的Linux私房菜》 Linux运维推荐入门系列</p>
-<p>《Linux内核设计与实现》</p>
-<p>网络</p>
-<p>《TCP/IP详解卷1：协议》</p>
-<p>Java</p>
-<p>《Java编程语言》 入门推荐</p>
-<p>《Java编程思想》</p>
-<p>Python</p>
-<p>《Python核心编程》（第2版），第3版难度加大，内容变更较多，用2版入门足够，perl现在已经没落了，可不学</p>
-<p>数据库</p>
-<p>《MySQL技术内幕》，目前企业所用后台大多是linux+mysql，所以主要学习下mysql就足够</p>
-<p>如果对网站开发有兴趣可以一并看下《php和mysql web开发》</p>
-<p>系统原理</p>
-<p>《深入理解计算机系统》强烈推荐，搞懂这本就基本能阅读大部分计算机相关著作</p>
-<p>计算机组成原理</p>
-<p>《编码：隐匿在计算机软硬件背后的语言》</p>
-<p>windows编程，估计你们会有windows编程的课程，如果有学下面这两本就足够了</p>
-<p>《Windows程序设计》charles petzold(著)</p>
-<p>《Windows核心编程》</p>
-<p>编译原理</p>
-<p>龙书《编译原理》，如果看不懂，推荐下面一本</p>
-<p>《编译系统透视：图解编译原理》</p>
-<p>数据结构与算法</p>
-<p>《数据结构与算法分析——C语言描述》，也有一本是C++语言描述</p>
-<p>《算法导论》</p>
-<p>编程主要靠实践，多电脑敲代码，最好以开发某款软件为目标去多写代码</p>
-<p>学完基础课程，建议也学习下服务器安全方面的知识</p>
-<p>上面不少书在网上有电子版，可以先下载看看，不清晰的再买实体书，或者图书馆去借</p>
-<p>其它一些进阶与提升的书，可以多逛逛图书馆</p>
-<p>给计算机初学者的！</p>
 
       
     </div>
