@@ -1,29 +1,156 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
+    <!-- so meta -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>
-        Armin的小屋  O(∩_∩)O~
-    </title>
-    <link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="科学上网作者：左耳朵 http://coolshell.cn 更新时间：2019-11-07 这篇文章可以写的更好，欢迎到 https://github.com/haoel/haoel.github.io 更新   科学上网 0. 序 1. 英文能力 \2. 购买VPS 2.1 常规VPS 2.2 CN2 线路 2.3 NCP 线路   \3. 搭建相关代理服务 3.1 设置Docker服务 3.">
+<meta name="keywords" content="转载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="科学上网">
+<meta property="og:url" content="https://armincxh.github.com/2019/11/09/科学上网/index.html">
+<meta property="og:site_name" content="Armin  O(∩_∩)O~">
+<meta property="og:description" content="科学上网作者：左耳朵 http://coolshell.cn 更新时间：2019-11-07 这篇文章可以写的更好，欢迎到 https://github.com/haoel/haoel.github.io 更新   科学上网 0. 序 1. 英文能力 \2. 购买VPS 2.1 常规VPS 2.2 CN2 线路 2.3 NCP 线路   \3. 搭建相关代理服务 3.1 设置Docker服务 3.">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://github.com/haoel/haoel.github.io/raw/master/images/cover.jpg">
+<meta property="og:updated_time" content="2019-11-09T15:09:08.810Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="科学上网">
+<meta name="twitter:description" content="科学上网作者：左耳朵 http://coolshell.cn 更新时间：2019-11-07 这篇文章可以写的更好，欢迎到 https://github.com/haoel/haoel.github.io 更新   科学上网 0. 序 1. 英文能力 \2. 购买VPS 2.1 常规VPS 2.2 CN2 线路 2.3 NCP 线路   \3. 搭建相关代理服务 3.1 设置Docker服务 3.">
+<meta name="twitter:image" content="https://github.com/haoel/haoel.github.io/raw/master/images/cover.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>科学上网</title>
+    <!-- styles -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
 </head>
 
-<body id="bodyx">
-    <div class="hd posts">
-    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
-    <div class="post-title">
-        <p>
-            科学上网
-        </p>
-        <hr>
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Github</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2019/11/10/读书，看文章/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2019/11/09/海阔天空/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://armincxh.github.com/2019/11/09/科学上网/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://armincxh.github.com/2019/11/09/科学上网/&text=科学上网"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://armincxh.github.com/2019/11/09/科学上网/&is_video=false&description=科学上网"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=科学上网&body=Check out this article: https://armincxh.github.com/2019/11/09/科学上网/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://armincxh.github.com/2019/11/09/科学上网/&name=科学上网&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=https://armincxh.github.com/2019/11/09/科学上网/&t=科学上网"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
     </div>
-    <div class="post-content">
-        <h1 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h1><p>作者：左耳朵 <a href="http://coolshell.cn/" target="_blank" rel="noopener">http://coolshell.cn</a> 更新时间：2019-11-07</p>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#科学上网"><span class="toc-number">1.</span> <span class="toc-text">科学上网</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-英文能力"><span class="toc-number">1.1.</span> <span class="toc-text">1. 英文能力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-购买VPS"><span class="toc-number">1.2.</span> <span class="toc-text">2. 购买VPS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-常规VPS"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 常规VPS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-CN2-线路"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 CN2 线路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-NCP-线路"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 NCP 线路</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-搭建相关代理服务"><span class="toc-number">1.3.</span> <span class="toc-text">3. 搭建相关代理服务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-设置Docker服务"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 设置Docker服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-开启-TCP-BBR-拥塞控制算法"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 开启 TCP BBR 拥塞控制算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-用-gost-设置-HTTPS-服务"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.3 用 gost 设置 HTTPS 服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-设置Shadowsocks服务"><span class="toc-number">1.3.4.</span> <span class="toc-text">3.4 设置Shadowsocks服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-设置L2TP-IPSec服务"><span class="toc-number">1.3.5.</span> <span class="toc-text">3.5 设置L2TP/IPSec服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-设置PPTP服务"><span class="toc-number">1.3.6.</span> <span class="toc-text">3.6 设置PPTP服务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-客户端设置"><span class="toc-number">1.4.</span> <span class="toc-text">4. 客户端设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-gost-客户端"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 gost 客户端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-Shadowsocks-客户端"><span class="toc-number">1.4.2.</span> <span class="toc-text">4.2 Shadowsocks 客户端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-VPN-客户端"><span class="toc-number">1.4.3.</span> <span class="toc-text">4.3 VPN 客户端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-流量伪装和其它方式"><span class="toc-number">1.5.</span> <span class="toc-text">5. 流量伪装和其它方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-V2Ray"><span class="toc-number">1.5.1.</span> <span class="toc-text">5.1 V2Ray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-Brook"><span class="toc-number">1.5.2.</span> <span class="toc-text">5.2 Brook</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-针对-IP-被封的解决方案"><span class="toc-number">1.6.</span> <span class="toc-text">6. 针对 IP 被封的解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-Cloudflare"><span class="toc-number">1.6.1.</span> <span class="toc-text">6.1 Cloudflare</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-V2Ray"><span class="toc-number">1.6.2.</span> <span class="toc-text">6.2 V2Ray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-补充"><span class="toc-number">1.6.3.</span> <span class="toc-text">6.3 补充</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-其它"><span class="toc-number">1.7.</span> <span class="toc-text">7. 其它</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        科学上网
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Armin  O(∩_∩)O~</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-11-09T15:06:38.000Z" itemprop="datePublished">2019-11-09</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/转载/">转载</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h1><p>作者：左耳朵 <a href="http://coolshell.cn/" target="_blank" rel="noopener">http://coolshell.cn</a> 更新时间：2019-11-07</p>
 <p>这篇文章可以写的更好，欢迎到 <a href="https://github.com/haoel/haoel.github.io" target="_blank" rel="noopener">https://github.com/haoel/haoel.github.io</a> 更新</p>
 <p><a href="https://github.com/haoel/haoel.github.io/blob/master/images/cover.jpg" target="_blank" rel="noopener"><img src="https://github.com/haoel/haoel.github.io/raw/master/images/cover.jpg" alt="img"></a></p>
 <ul>
@@ -245,55 +372,140 @@
 <p><a href="https://getoutline.org/en/home" target="_blank" rel="noopener">Outline</a> 是由 Google 旗下 <a href="https://jigsaw.google.com/" target="_blank" rel="noopener">Jigsaw</a> 团队开发的整套翻墙解决方案。Server 端使用 Shadowsocks，MacOS, Windows, iOS, Android 均有官方客户端。使用 Outline Manager 可以一键配置 DigitalOcean。其他平台例如 AWS, Google Cloud 也提供相应脚本。主要优点就是使用简单并且整个软件栈全部<a href="https://github.com/Jigsaw-Code/?q=outline" target="_blank" rel="noopener">开源</a>，有专业团队长期维护。</p>
 <p>（全文完）</p>
 
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
     </div>
-    <hr class="fhr">
-    <div id="vcomments"></div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Github</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#科学上网"><span class="toc-number">1.</span> <span class="toc-text">科学上网</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-英文能力"><span class="toc-number">1.1.</span> <span class="toc-text">1. 英文能力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-购买VPS"><span class="toc-number">1.2.</span> <span class="toc-text">2. 购买VPS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-常规VPS"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 常规VPS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-CN2-线路"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 CN2 线路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-NCP-线路"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 NCP 线路</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-搭建相关代理服务"><span class="toc-number">1.3.</span> <span class="toc-text">3. 搭建相关代理服务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-设置Docker服务"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 设置Docker服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-开启-TCP-BBR-拥塞控制算法"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 开启 TCP BBR 拥塞控制算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-用-gost-设置-HTTPS-服务"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.3 用 gost 设置 HTTPS 服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-设置Shadowsocks服务"><span class="toc-number">1.3.4.</span> <span class="toc-text">3.4 设置Shadowsocks服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-设置L2TP-IPSec服务"><span class="toc-number">1.3.5.</span> <span class="toc-text">3.5 设置L2TP/IPSec服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-设置PPTP服务"><span class="toc-number">1.3.6.</span> <span class="toc-text">3.6 设置PPTP服务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-客户端设置"><span class="toc-number">1.4.</span> <span class="toc-text">4. 客户端设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-gost-客户端"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 gost 客户端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-Shadowsocks-客户端"><span class="toc-number">1.4.2.</span> <span class="toc-text">4.2 Shadowsocks 客户端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-VPN-客户端"><span class="toc-number">1.4.3.</span> <span class="toc-text">4.3 VPN 客户端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-流量伪装和其它方式"><span class="toc-number">1.5.</span> <span class="toc-text">5. 流量伪装和其它方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-V2Ray"><span class="toc-number">1.5.1.</span> <span class="toc-text">5.1 V2Ray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-Brook"><span class="toc-number">1.5.2.</span> <span class="toc-text">5.2 Brook</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-针对-IP-被封的解决方案"><span class="toc-number">1.6.</span> <span class="toc-text">6. 针对 IP 被封的解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-Cloudflare"><span class="toc-number">1.6.1.</span> <span class="toc-text">6.1 Cloudflare</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-V2Ray"><span class="toc-number">1.6.2.</span> <span class="toc-text">6.2 V2Ray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-补充"><span class="toc-number">1.6.3.</span> <span class="toc-text">6.3 补充</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-其它"><span class="toc-number">1.7.</span> <span class="toc-text">7. 其它</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://armincxh.github.com/2019/11/09/科学上网/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://armincxh.github.com/2019/11/09/科学上网/&text=科学上网"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://armincxh.github.com/2019/11/09/科学上网/&is_video=false&description=科学上网"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=科学上网&body=Check out this article: https://armincxh.github.com/2019/11/09/科学上网/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://armincxh.github.com/2019/11/09/科学上网/&title=科学上网"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://armincxh.github.com/2019/11/09/科学上网/&name=科学上网&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=https://armincxh.github.com/2019/11/09/科学上网/&t=科学上网"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
 </div>
-    <div class="footer" id="footer">
-    <p>Copyright © Armin
-        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
-            <input type="checkbox" name="switch" id="update_style">
-            <span class="el-switch-style"></span>
-        </label>
-<!--         <script type="text/javascript">
-        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
-        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-        </script> -->
-    </p>
-</div>
-<input type="hidden" id="web_style" value="black">
-<input type="hidden" id="valine_appid" value="">
-<input type="hidden" id="valine_appKey" value="">
-<script src="/libs/jquery.min.js"></script>
-<script src="/libs/highlight/highlight.pack.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
-<script src="/js/js.js"></script>
-<style type="text/css">
-.v * {
-    color: #698fca;
-}
 
-.v .vlist .vcard .vhead .vsys {
-    color: #3a3e4a;
-}
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Armin
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Github</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
 
-.v .vlist .vcard .vh .vmeta .vat {
-    color: #638fd5;
-}
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
 
-.v .vlist .vcard .vhead .vnick {
-    color: #6ba1ff;
-}
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<!-- clipboard -->
 
-.v a {
-    color: #8696b1;
-}
+  <script src="/lib/clipboard/clipboard.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
 
-.v .vlist .vcard .vhead .vnick:hover {
-    color: #669bfc;
-}
-</style>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'armincxh';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
 
 </body>
-
 </html>
